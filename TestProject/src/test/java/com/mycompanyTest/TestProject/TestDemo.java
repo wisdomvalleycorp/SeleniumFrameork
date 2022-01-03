@@ -10,7 +10,7 @@ import org.testng.asserts.SoftAssert;
 @Listeners(listner.Listners.class)
 public class TestDemo {
 	
-	@Test(groups = {"sanity"})
+	@Test()
 	public void test1(){
 		System.out.println("in test1");
 	}
@@ -20,17 +20,17 @@ public class TestDemo {
 		System.out.println("in test2");
 		//SoftAssert asert = new SoftAssert() ;
 		//asert.assertTrue(false);
-		Assert.assertTrue(0>1);
+		//Assert.assertTrue(0>1);
 		//Assert.fail();
 		//System.out.println("Test2 failed");
 	}
 	
-	@Test(groups = {"regression"})
+	@Test()
 	public void test3(){
 		System.out.println("in test3");
 	}
 	
-	@Test(groups = {"regression"})
+	@Test()
 	public void test4(){
 		System.out.println("in test4");
 	}
